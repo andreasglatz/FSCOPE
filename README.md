@@ -7,20 +7,18 @@ Supplemental code published in
 
 _A. A. Varlamov, A. Galda, and A. Glatz_
 
-Rev. Mod. Phys. 90, 015009 (2018)
-
-https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.90.015009
+[Rev. Mod. Phys. 90, 015009 (2018)](https://link.aps.org/doi/10.1103/RevModPhys.90.015009)
 
 ---
 
 The source code and make file can be found in src/
 
-- Compilation
--- run make_FSCOPE.sh to compile change compiler and flags as needed
++ Compilation
+> run make_FSCOPE.sh to compile change compiler and flags as needed
 
 
-- Usage:
-+ run the executable without arguments for usage information
++ Usage:
+> run the executable without arguments for usage information
 
 Parameters for the computation can be either defined on the command line directly or in a separate “ini” file.
 Example:
@@ -34,7 +32,7 @@ or
 with file
 
 sigma.ini
--------------------
+```
 ctype=100
 tmin=1.01
 dt=0.01
@@ -44,6 +42,6 @@ dh=0.0
 Nh=1
 Tc0tau=0.01
 Tc0tauphi=1
--------------------
+```
 
 This example calculates 100 values for the fluctuation correction to conductivity at fixed field h=0.1 as function of temperature t from 1.01 to 2.00 in 0.01 steps.
